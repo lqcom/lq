@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:beans="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+    <!-- 配置 favicon.ico不进行安全拦截-->
+    <http pattern="favicon.ico" security="none"></http>
+
+<!--    配置不拦截的资源-->
+    <http pattern="/login.html" security="none"></http>
+    <http pattern="/css/**" security="none"></http>
+    <http pattern="/img/**" security="none"></http>
+    <http pattern="/js/**" security="none"></http>
+    <http pattern="/plugins/**" security="none"></http>
+
+<!--    页面拦截规则-->
+    <http use-expressions="false">
+        <intercept-url pattern="/**" access="ROLE_ADMIN"></intercept-url>
+
+        <!--form-login 为开启表单登陆-->
+        <!--
+       login-page：指定登录页面。
+       authentication-failure-url：指定了身份验证失败时跳转到的页面。
+       default-target-url：指定了成功进行身份验证和授权后默认呈现给用户的页面。
+       -->
+
+        <form-login login-page="/login.html" always-use-default-target="true" default-target-url="/admin/index.html" authentication-failure-url="/login.html"></form-login>
+        <!--csrf disabled="true" 关闭 csrf ,如果不加会出现错误-->
+        <csrf disabled="true"/>
+
+        <!--如果在系统中使用了框架页，需要设置框架页的策略为SAMEORIGIN-->
+        <headers>
+            <frame-options policy="SAMEORIGIN"/>
+        </headers>
+        <logout/>
+    </http>
+<!--认证管理器-->
+
+    <authentication-manager>
+        <authentication-provider>
+            <user-service>
+                <user name="admin" authorities="ROLE_ADMIN" password="991015"></user>
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+</beans:beans>
+

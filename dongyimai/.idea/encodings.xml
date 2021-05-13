@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/donghyimai-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-cart-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-cart-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-cart-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-content-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-content-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-makecode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-order-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-page-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-page-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-page-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-pay-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-pay-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-portal-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-search-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-search-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-search-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-sellergoods-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-sellergoods-service-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-shop-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-solr-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-user-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dongyimai-user-web" charset="UTF-8" />
+  </component>
+</project>
